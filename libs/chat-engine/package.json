@@ -1,0 +1,97 @@
+{
+  "_from": "chat-engine@^0.9.21",
+  "_id": "chat-engine@0.9.21",
+  "_inBundle": false,
+  "_integrity": "sha512-7l53RZ82MREd0aPUoFZE8YJCKLrlcGogc7L/20Qw3ICl7YF2cKVLEYTMYcisoZvLVYwmwoj4W6iKWYvyCx6Fbg==",
+  "_location": "/chat-engine",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "chat-engine@^0.9.21",
+    "name": "chat-engine",
+    "escapedName": "chat-engine",
+    "rawSpec": "^0.9.21",
+    "saveSpec": null,
+    "fetchSpec": "^0.9.21"
+  },
+  "_requiredBy": [
+    "/",
+    "/chat-engine-desktop-notifications",
+    "/chat-engine-emoji"
+  ],
+  "_resolved": "https://registry.npmjs.org/chat-engine/-/chat-engine-0.9.21.tgz",
+  "_shasum": "5bd3bd9f8b26d41e1e4684630abc012fcc21ff28",
+  "_spec": "chat-engine@^0.9.21",
+  "_where": "/Users/shannoncode/repo/Emblem.CurrentWork/chat-engine-examples",
+  "author": {
+    "name": "PubNub"
+  },
+  "browser": "dist/chat-engine.js",
+  "bugs": {
+    "url": "https://github.com/pubnub/chat-engine/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "2.1.2",
+    "axios": "0.16.2",
+    "eventemitter2": "2.2.1",
+    "pubnub": "4.20.2"
+  },
+  "deprecated": false,
+  "description": "ChatEngine",
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "chai": "^3.5.0",
+    "chat-engine-typing-indicator": "0.0.x",
+    "decache": "^4.5.0",
+    "docdash": "^0.4.0",
+    "es6-promise": "^4.1.1",
+    "eslint": "^4.7.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-mocha": "^6.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify-es": "^0.1.3",
+    "http-server": "^0.10.0",
+    "isparta": "^4.1.1",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.2.0",
+    "proxyquire": "^1.8.0",
+    "pubnub-functions-mock": "^0.0.13",
+    "request": "^2.82.0",
+    "run-sequence": "^2.2.0",
+    "sinon": "^4.0.0",
+    "stats-webpack-plugin": "^0.6.1",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.6.0",
+    "webpack-stream": "^4.0.0"
+  },
+  "homepage": "https://github.com/pubnub/chat-engine#readme",
+  "keywords": [
+    "pubnub",
+    "chat",
+    "sdk",
+    "realtime"
+  ],
+  "main": "src/index.js",
+  "name": "chat-engine",
+  "react-native": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pubnub/chat-engine.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "deploy": "gulp; npm publish;",
+    "docs": "jsdoc src/index.js -c jsdoc.json"
+  },
+  "version": "0.9.21"
+}

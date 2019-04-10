@@ -1,0 +1,44 @@
+{
+  "_from": "chat-engine-online-user-search@^0.0.7",
+  "_id": "chat-engine-online-user-search@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-W55qxzcFaz6qF3qEb4pSQ6dB2qM=",
+  "_location": "/chat-engine-online-user-search",
+  "_phantomChildren": {
+    "async": "2.1.2",
+    "axios": "0.16.2",
+    "eventemitter2": "2.2.1",
+    "pubnub": "4.20.2",
+    "request": "2.88.0"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "chat-engine-online-user-search@^0.0.7",
+    "name": "chat-engine-online-user-search",
+    "escapedName": "chat-engine-online-user-search",
+    "rawSpec": "^0.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.7"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/chat-engine-online-user-search/-/chat-engine-online-user-search-0.0.7.tgz",
+  "_shasum": "5b9e6ac737056b3eaa177a846f8a5243a741daa3",
+  "_spec": "chat-engine-online-user-search@^0.0.7",
+  "_where": "/Users/shannoncode/repo/Emblem.CurrentWork/chat-engine-examples",
+  "author": {
+    "name": "Ian Jennings"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chat-engine": "0.5.x",
+    "dotty": "0.0.2"
+  },
+  "deprecated": false,
+  "description": "Search through list of online users using string matching.",
+  "main": "src/plugin.js",
+  "name": "chat-engine-online-user-search",
+  "version": "0.0.7"
+}

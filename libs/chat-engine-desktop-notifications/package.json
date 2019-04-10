@@ -1,0 +1,37 @@
+{
+  "_from": "chat-engine-desktop-notifications@^0.0.7",
+  "_id": "chat-engine-desktop-notifications@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-FqHppl7vVOKA5nLaHb7wn4TvgkSlXpmE0GVX1w5rCj6AEN9DPDBdgyIZH2UUqjb1eoQjWFG9KhWxvo3/6FupOQ==",
+  "_location": "/chat-engine-desktop-notifications",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "chat-engine-desktop-notifications@^0.0.7",
+    "name": "chat-engine-desktop-notifications",
+    "escapedName": "chat-engine-desktop-notifications",
+    "rawSpec": "^0.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.7"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/chat-engine-desktop-notifications/-/chat-engine-desktop-notifications-0.0.7.tgz",
+  "_shasum": "e67968f02b7aecb037cb8b249746ae3ca3e96244",
+  "_spec": "chat-engine-desktop-notifications@^0.0.7",
+  "_where": "/Users/shannoncode/repo/Emblem.CurrentWork/chat-engine-examples",
+  "author": {
+    "name": "Ian Jennings"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chat-engine": "^0.9.21"
+  },
+  "deprecated": false,
+  "description": "Show a desktop notification when a message is received and app is not in focus.",
+  "main": "src/plugin.js",
+  "name": "chat-engine-desktop-notifications",
+  "version": "0.0.7"
+}

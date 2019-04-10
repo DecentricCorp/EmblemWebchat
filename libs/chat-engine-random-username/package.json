@@ -1,0 +1,43 @@
+{
+  "_from": "chat-engine-random-username@^0.0.4",
+  "_id": "chat-engine-random-username@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-bYy2vC33poviBu2eW0js0FRIXiI=",
+  "_location": "/chat-engine-random-username",
+  "_phantomChildren": {
+    "async": "2.1.2",
+    "axios": "0.16.2",
+    "eventemitter2": "2.2.1",
+    "pubnub": "4.20.2",
+    "request": "2.88.0"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "chat-engine-random-username@^0.0.4",
+    "name": "chat-engine-random-username",
+    "escapedName": "chat-engine-random-username",
+    "rawSpec": "^0.0.4",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/chat-engine-random-username/-/chat-engine-random-username-0.0.4.tgz",
+  "_shasum": "6d8cb6bc2df7a68be206ed9e5b48ecd054485e22",
+  "_spec": "chat-engine-random-username@^0.0.4",
+  "_where": "/Users/shannoncode/repo/Emblem.CurrentWork/chat-engine-examples",
+  "author": {
+    "name": "Ian Jennings"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chat-engine": "0.5.x"
+  },
+  "deprecated": false,
+  "description": "Assigns a random username to new users.",
+  "main": "src/plugin.js",
+  "name": "chat-engine-random-username",
+  "version": "0.0.4"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "chat-engine-desktop-notifications-example",
+  "version": "0.0.1",
+  "description": "Example on how to integrate Desktop Notifcations plugin into the ChatEngine framework.",
+  "main": "index.html",
+  "dependencies": {
+    "chat-engine": "^0.9.18",
+    "chat-engine-desktop-notifications": "^0.0.5",
+    "chat-engine-emoji": "0.0.x",
+    "chat-engine-markdown": "0.0.x",
+    "chat-engine-online-user-search": "0.0.7",
+    "chat-engine-random-username": "0.0.4",
+    "chat-engine-typing-indicator": "0.0.x",
+    "chat-engine-unread-messages": "0.0.x",
+    "node-libs-react-native": "^1.0.1",
+    "react": "15.4.2",
+    "react-dom": "15.4.2"
+  },
+  "devDependencies": {},
+  "author": "Craig Baumgarten"
+}

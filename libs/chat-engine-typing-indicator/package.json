@@ -1,0 +1,42 @@
+{
+  "_from": "chat-engine-typing-indicator@^0.0.9",
+  "_id": "chat-engine-typing-indicator@0.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-Xf6kIf9ZzhTZVBaeJ5iVJK8rSnHQSrNg/raH54Nt+Jkxrph4xAyqQRw0+8a+GHkVb8kNVK7UABfUYz0YInDF4Q==",
+  "_location": "/chat-engine-typing-indicator",
+  "_phantomChildren": {
+    "async": "2.1.2",
+    "axios": "0.16.2",
+    "eventemitter2": "2.2.1",
+    "pubnub": "4.20.2"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "chat-engine-typing-indicator@^0.0.9",
+    "name": "chat-engine-typing-indicator",
+    "escapedName": "chat-engine-typing-indicator",
+    "rawSpec": "^0.0.9",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.9"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/chat-engine-typing-indicator/-/chat-engine-typing-indicator-0.0.9.tgz",
+  "_shasum": "fbea3740c1cf821322aff5ba526d0030ff2a8242",
+  "_spec": "chat-engine-typing-indicator@^0.0.9",
+  "_where": "/Users/shannoncode/repo/Emblem.CurrentWork/chat-engine-examples",
+  "author": {
+    "name": "Ian Jennings"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chat-engine": "^0.8.3"
+  },
+  "deprecated": false,
+  "description": "Adds the ability to show a typing indicator on a ChatEngine Chat",
+  "main": "src/plugin.js",
+  "name": "chat-engine-typing-indicator",
+  "version": "0.0.9"
+}

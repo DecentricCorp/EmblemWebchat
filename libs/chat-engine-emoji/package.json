@@ -1,0 +1,42 @@
+{
+  "_from": "chat-engine-emoji@^0.0.8",
+  "_id": "chat-engine-emoji@0.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-PYwFy3gnDoSNsEskfYZQCnf2Bt1EX4rnQZo2qrG+lahfjo5y258E1AAzzSv1sma81Z12tza9GtrCms5NOflfRA==",
+  "_location": "/chat-engine-emoji",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "chat-engine-emoji@^0.0.8",
+    "name": "chat-engine-emoji",
+    "escapedName": "chat-engine-emoji",
+    "rawSpec": "^0.0.8",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.8"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/chat-engine-emoji/-/chat-engine-emoji-0.0.8.tgz",
+  "_shasum": "8f6edff77399a7598b839429abf033f312bc2ae3",
+  "_spec": "chat-engine-emoji@^0.0.8",
+  "_where": "/Users/shannoncode/repo/Emblem.CurrentWork/chat-engine-examples",
+  "author": {
+    "name": "Ian Jennings"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chat-engine": "^0.9.21",
+    "dotty": "0.0.2"
+  },
+  "deprecated": false,
+  "description": "Turns ```:pizza:``` into :pizza: within chats.",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^6.0.2"
+  },
+  "main": "src/plugin.js",
+  "name": "chat-engine-emoji",
+  "version": "0.0.8"
+}
