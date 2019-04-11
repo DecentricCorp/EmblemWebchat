@@ -62,24 +62,26 @@ function initChat() {
                 me = data.me;
     
                 // create a new ChatEngine Chat
-                myChat = new ChatEngine.Chat('emblemvault-demo3');
+                myChat = new ChatEngine.Chat('emblemvault-demo5')
     
                 // when we recieve messages in this chat, render them
                 myChat.on('message', message => {
-                    renderMessage(message);
+                    message.data.unsafeText = message.data.text
+                    message.data.text = sanitizeHtml(message.data.unsafeText, {allowedTags: false, allowedAttributes: false})
+                    renderMessage(message)
                 });
     
                 // when a user comes online, render them in the online list
                 myChat.on('$.online.*', data => {
                     getIdBalance(data.user.state.address, (balance)=>{
                         data.user.state.id_tokens = balance
-                        $('#people-list ul').append(peopleTemplate(data.user));
+                        $('#people-list ul').append(peopleTemplate(data.user))
                     })                
                 })
     
                 // when a user goes offline, remove them from the online list
                 myChat.on('$.offline.*', data => {
-                    $('#people-list ul').find('#' + data.user.uuid).remove();
+                    $('#people-list ul').find('#' + data.user.uuid).remove()
                 });
     
                 // wait for our chat to be connected to the internet
@@ -91,7 +93,8 @@ function initChat() {
                         limit: 20
                     }).
                         on('message', data => {
-    
+                            data.data.unsafeText = data.data.text
+                            data.data.text = sanitizeHtml(data.data.unsafeText, {allowedTags: false, allowedAttributes: false})
                             console.log(data)
     
                             // when messages are returned, render them like normal messages
@@ -100,6 +103,29 @@ function initChat() {
                         });
     
                 });
+
+                //providing a config is optional, the default timeout is 1000ms
+                let config = { timeout: 1000 }
+                myChat.plugin(ChatEngineCore.plugin['chat-engine-typing-indicator'](config));
+                
+                // emit the typing event
+                myChat.typingIndicator.startTyping();
+                
+                // manually emit the stop tying event
+                // this is automagically emitted after the timeout period, or when a message is sent
+                myChat.typingIndicator.stopTyping();
+                
+                // typing boolean
+                myChat.isTyping;
+                // False
+                
+                myChat.on('$typingIndicator.startTyping', (payload) => {
+                    console.log(payload.sender.state.address, "is typing...");
+                });
+                
+                myChat.on('$typingIndicator.stopTyping', (payload) => {
+                    console.log(payload.sender.state.address, "is not typing.");
+                });
     
                 // bind our "send" button and return key to send message
                 $('#sendMessage').on('submit', sendMessage);
@@ -107,6 +133,7 @@ function initChat() {
             });
     
         };
+        
     
         //generate event when user comes online and reconnect to chat
         ChatEngine.on('$.network.up.online', payload => {
@@ -136,7 +163,7 @@ const sendMessage = () => {
 
         // emit the `message` event to everyone in the Chat
         myChat.emit('message', {
-            text: message
+            text: sanitizeHtml(message, {allowedTags: false, allowedAttributes: false})
             /*translate: {
             text: message,
             source: source_language,
